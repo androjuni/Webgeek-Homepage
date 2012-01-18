@@ -10,6 +10,7 @@
  * ==|== normalize ==========================================================
  */
 
+ @import url(http://fonts.googleapis.com/css?family=PT+Sans);
 
 /* =============================================================================
    HTML5 display definitions
@@ -212,12 +213,14 @@ td { vertical-align: top; }
    ========================================================================== */
 
 .container{
-	width:72.646404744255003706449221645663%;
+}
+.centered{
+	width:960px;
 	margin:0 auto;
 }
 header{
 	float:left;
-	min-height:75px;
+	min-height:80px;
 	width:100%;
 	background: #415b79; /* Old browsers */
 	background: -moz-linear-gradient(top,  #415b79 0%, #2a3b5b 100%); /* FF3.6+ */
@@ -227,6 +230,9 @@ header{
 	background: -ms-linear-gradient(top,  #415b79 0%,#2a3b5b 100%); /* IE10+ */
 	background: linear-gradient(top,  #415b79 0%,#2a3b5b 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#415b79', endColorstr='#2a3b5b',GradientType=0 ); /* IE6-9 */
+}
+header .centered{
+	height:80px;
 }
 #header-shadow{
 background: #c6d4d9; /* Old browsers */
@@ -241,6 +247,16 @@ height:8px;
 width:100%;
 float:left;
 }
+#image-logo{
+	margin-top:20px;
+	float:left;
+	height:47px;
+	overflow:hidden;
+	width:227px;
+}
+#image-logo img{
+	margin-top:-1046px;
+}
 #header-logo{
 	margin-top:2%;
 	float:left;
@@ -253,63 +269,165 @@ float:left;
 	width:38.176426982950333580429948109711%;
 	text-align:center;
 }
-#header-nav ul{
-	margin-top:8.5%;
-	width:100%;
-}
-#header-nav li{
-	display:inline;
-	margin:4%;
-}
-#header-nav a{
-	text-decoration:none;
-	font-weight:bold;
-	color:white;
-	font-size:1.0769230769230769230769230769231em;
-	text-shadow:1px 1px 1px #777;
-}
 #header-user-options{
-	float:right;
+	float:left;
 	margin-top:2.5%;
 	margin-bottom:2.5%;
 	text-align:center;
 }
-#header-user-options li{
-	display:inline;
-}
 #main{
 	float:left;
 	width:100%;
-	height:588px;
-	background: #effbff url('../img/bodybg.png') no-repeat 50% 0; /* Old browsers */
-	background: -moz-linear-gradient(top,  #effbff 34%, #cae6f1 100%) url('img/bodybg.png') repeat-y 50% 0; /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(34%,#effbff), color-stop(100%,#cae6f1)) url('img/bodybg.png') repeat-y 50% 0; /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #effbff 34%,#cae6f1 100%) url('img/bodybg.png') repeat-y 50% 0; /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #effbff 34%,#cae6f1 100%) url('img/bodybg.png') repeat-y 50% 0; /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #effbff 34%,#cae6f1 100%) url('img/bodybg.png') repeat-y 50% 0; /* IE10+ */
-	background: linear-gradient(top,  #effbff 34%,#cae6f1 100%) url('img/bodybg.png') repeat-y 50% 0; /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#effbff', endColorstr='#cae6f1',GradientType=0 ) url('img/bodybg.png') repeat-y 50% 0; /* IE6-9 */
+	background: #effbff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #effbff 34%, #cae6f1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(34%,#effbff), color-stop(100%,#cae6f1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* IE10+ */
+	background: linear-gradient(top,  #effbff 34%,#cae6f1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#effbff', endColorstr='#cae6f1',GradientType=0 ); /* IE6-9 */
 }
-
-.tagline{
+#main .centered{
+	min-height:752px;
+}
+#group-tagline{
+	min-height:200px;
 	text-align:center;
+}
+.tagline1{
+	font-family: 'PT Sans', sans-serif;
+	font-size:4.6em;
+	color:#404040;
+	text-shadow:4px 4px 4px white;
+	margin:0;
+}
+.tagline2{
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.886em;
+	font-weight:bold;
+	margin-bottom:0;
+	text-shadow:4px 4px 4px white;
+}
+.tagline3{
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.4em;
+	font-style:italic;
+	margin:5px 0 0 0;
+	text-shadow:4px 4px 4px white;
+}
+.tagline4{
+	font-family: 'PT Sans', sans-serif;
+	font-size:1.4em;
+	font-style:italic;
+	margin:0;
+	text-shadow:4px 4px 4px white;
+}
+#group-joinnow{
+	min-height:130px;
+	padding-top:70px;
+	width:100%;
+	text-align:center;
+	background: url("../img/groupjoinnowbg.png") no-repeat 50% 0;
+}
+#group-features{
+	min-height:352px;
+}
+#group-mobile{
+	float:left;
+	width:292px;
+}
+#group-forum{
+	float:left;
+	width:455px;
+	text-align:center;
+}
+#group-apps{
+	float:left;
+}
+footer{
+	float:left;
+	background-color:#e4e4e4;
+	width:100%;
+}
+footer .centered{
+	min-height:234px;
+}
+
+#button-join-now{
 	margin:0 auto;
-	display:block;
+	width:319px;
+	overflow:hidden;
+	height:93px;
 }
-h1.tagline{
-	font-size:4.2857142857142857142857142857143em;
-}
-span.tagline{
-	font-size:1.7142857142857142857142857142857em;
+#button-join-now img:hover{
+	margin-top:-94px;
 }
 
+/*sidebar buttons*/
+#button-iphone{
+	width:193px;
+	overflow:hidden;
+	height:64px;
+}
+#button-iphone img{
+	margin-top:-185px;
+}
+#button-iphone img:hover{
+	margin-left:-193px;
+}
+#button-android{
+	width:193px;
+	overflow:hidden;
+	height:64px;
+}
+#button-android img{
+	margin-top:-259px;
+}
+#button-android img:hover{
+	margin-left:-193px;
+}
+#button-facebook{
+	width:193px;
+	overflow:hidden;
+	height:64px;
+}
+#button-facebook img{
+	margin-top:-332px;
+}
+#button-facebook img:hover{
+	margin-left:-193px;
+}
+#button-chrome{
+	width:193px;
+	overflow:hidden;
+	height:64px;
+}
+#button-chrome img{
+	margin-top:-406px;
+}
+#button-chrome img:hover{
+	margin-left:-193px;
+}
+.apps-button{
+	margin-bottom:10px;
+}
 
+#image-forum{
+	overflow:hidden;
+	width:454px;
+	height:287px;
+}
+#image-forum img{
+	margin-top:-762px;
+}
 
-
-
-
-
-
+#image-mobile{
+	overflow:hidden;
+	height:287px;
+}
+#image-mobile img{
+	margin-top:-471px;
+}
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
